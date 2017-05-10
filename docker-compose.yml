@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+
+  master:
+    image: nkooinga/jmmaster
+    container_name: master
+    tty: true
+    hostname: master
+    networks:
+      - poct
+  slave:
+    image: nkooinga/jmserver
+    tty: true
+    networks:
+      - poct
+
+networks:
+  poct:
+    driver: bridge
