@@ -1,5 +1,5 @@
 # Use Ubuntu
-FROM nkooinga/jmbase
+FROM nkooinga/jmeter-docker/jmbase
 MAINTAINER poctTeam
 
 # Ports to be exposed from the container for JMeter Master
