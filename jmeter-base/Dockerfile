@@ -16,8 +16,8 @@ RUN apt-get clean && \
 RUN   mkdir /jmeter \
       && cd /jmeter/ \
       && wget https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-3.2.tgz \
-      && tar -xzf apache-jmeter-2.13.tgz \
-      && rm apache-jmeter-2.13.tgz \
+      && tar -xzf apache-jmeter-3.2.tgz \
+      && rm apache-jmeter-3.2.tgz \
 	  && mkdir /jmeter-plugins \
 	  && cd /jmeter-plugins/ \
 	  && wget https://jmeter-plugins.org/downloads/file/JMeterPlugins-ExtrasLibs-1.4.0.zip \

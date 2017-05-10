@@ -3,14 +3,14 @@ version: '2'
 services:
 
   master:
-    image: nkooinga/jmmaster
+    image: nkooinga/jmeter-docker/jmeter-master/Dockerfiler
     container_name: master
     tty: true
     hostname: master
     networks:
       - poct
   slave:
-    image: nkooinga/jmserver
+    image: nkooinga/jmeter-docker/jmeter-server/Dockerfile
     tty: true
     networks:
       - poct
