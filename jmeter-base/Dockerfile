@@ -1,8 +1,8 @@
 # Use Ubuntu
 FROM ubuntu
-MAINTAINER poctTeam
+MAINTAINER STC
 
-# Install wger & JRE
+# Install wget & JRE & git
 RUN apt-get clean && \
 	apt-get update && \
 	apt-get -qy install \

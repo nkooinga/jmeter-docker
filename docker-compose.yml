@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 
 services:
 
@@ -8,13 +8,13 @@ services:
     tty: true
     hostname: master
     networks:
-      - poct
+      - stcperf
   slave:
     image: nkooinga/jmeter-docker/jmeter-server/dockerfile
     tty: true
     networks:
-      - poct
+      - stcperf
 
 networks:
-  poct:
+  stcperf:
     driver: bridge

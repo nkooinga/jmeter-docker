@@ -1,6 +1,6 @@
 # Use Ubuntu
-FROM nkooinga/jmbase
-MAINTAINER poctTeam
+FROM jmeter-base
+MAINTAINER STC
 
 # Ports to be exposed from the container for JMeter Slaves/Server
 EXPOSE 1099 50000
